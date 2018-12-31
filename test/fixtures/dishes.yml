@@ -1,9 +1,13 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Restaurant Test 1
+  name: Dish Test 1
+  price_in_cents: 9.99
+  restaurant: one
   sample_image: Image
 
 two:
-  name: Restaurant Test 2
+  name: Dish Test 2
+  price_in_cents: 9.99
+  restaurant: two
   sample_image: Image

@@ -19,7 +19,7 @@ Bundler.require(*Rails.groups)
 
 module App
   class Application < Rails::Application
-    Dir["./app/middleware/*.rb"].each do |file|
+    Dir["./app/middleware/*.rb", './lib/*.rb'].each do |file|
       require file
     end
     # Initialize configuration defaults for originally generated Rails version.

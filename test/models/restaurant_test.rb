@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class RestaurantTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  should validate_presence_of(:name)
+  should validate_uniqueness_of(:name)
+  should have_many(:dishes).dependent(:destroy)
 end
