@@ -2,6 +2,7 @@ module Api
   module V1
     class DishesController < ApplicationController
       before_action :set_dish, only: [:update, :destroy]
+
       def index
         dishes = Dish.limit(options_params[:limit])
 

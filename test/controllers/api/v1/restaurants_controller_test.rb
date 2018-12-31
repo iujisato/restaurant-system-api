@@ -23,12 +23,6 @@ class Api::V1::RestaurantsControllerTest < ActionDispatch::IntegrationTest
     assert_equal(@restaurant.id, parsedResponse.first['id'])
   end
 
-  # def list
-  #   restaurants = Restaurant.where(id: restaurants_list_params[:ids])
-  #
-  #   render json: restaurants
-  # end
-
   test "should create restaurant" do
     restaurant_attributes = {
       name: 'Test case',

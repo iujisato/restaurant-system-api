@@ -9,7 +9,7 @@ class PexelsApi
       }
 
       faraday.headers = {
-        'Authorization': '563492ad6f9170000100000121f1580e60954e3382381b923a2d1993'
+        'Authorization': Rails.application.credentials[Rails.env.to_sym][:pexels_key]
       }
     end
 
