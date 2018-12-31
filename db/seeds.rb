@@ -11,6 +11,10 @@ require 'faker'
 return if (Restaurant.count > 10)
 
 10.times {
-  Restaurant.create(name: "#{Faker::Dessert.flavor} foods" )
+  restaurant = Restaurant.create(name: "#{Faker::Dessert.flavor} foods")
+  restaurant.dishes.create(
+    name: "#{Faker::Dessert.flavor}",
+    price_in_cents: rand(1..6000),
+  )
 }
 

@@ -8,21 +8,25 @@ This is a test application made with rails api
 ```
   docker-compose build
 ```
-3. After successfullying building, run:
-```
-docker-compose run api rails db:create db:migrate db:seed
-```
 3. After database migrations:
 ```
   docker-compose up
 ```
-4. Access the application on:
+4. After successfullying building, run:
+```
+docker-compose run api rails db:create db:migrate db:seed
+```
+5. Access the application on:
 ```
 localhost:3000
 ```
-5. Generate a `config/master.key` with the provided hash. This key is used on
+6. Generate a `config/master.key` with the provided hash. This key is used on
    `Pexel API` to generate random image paths.
 
+7. Run tests with
+```
+rake tests
+```
 ### Troubleshooting
 1. You can start `pry` debugger attaching a docker session to container.
 ```
