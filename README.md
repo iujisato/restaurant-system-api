@@ -1,6 +1,6 @@
 # Open Ristorant API
 
-This is a test application made in react.
+This is a test application made with rails api
 
 ### Installation
 1. Download and install `docker` and `docker-compose`.
